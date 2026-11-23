@@ -1,0 +1,18 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "127.0.0.1:${JUPYTER_PORT:-8888}:8888"
+    env_file:
+      - .env
+    environment:
+      # JUPYTER_PORT in .env selects the host port only.
+      JUPYTER_PORT: "8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work/notebooks
+      - ./data:/home/jovyan/work/data
+      - ./outputs:/home/jovyan/work/outputs
+    command:
+      - start-notebook.py
+      - --ServerApp.root_dir=/home/jovyan/work
+    restart: unless-stopped
