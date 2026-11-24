@@ -1,0 +1,8 @@
+document_id,http_status,generation_status,valid_json,valid_schema,citations_not_found,error,reference_parties,model_parties,reference_dates,model_dates,reference_amounts,model_amounts,reference_deadlines,model_deadlines,model_version,total_tokens
+test_002610,200,ALTERNATIVE_STATUS_CONTENT_FILTER,False,,,"Ошибка JSON: Expecting value, строка 1",4,,4,,3,,1,,,0
+test_006145,200,ALTERNATIVE_STATUS_CONTENT_FILTER,False,,,"Ошибка JSON: Expecting value, строка 1",4,,7,,10,,3,,,0
+test_006753,200,ALTERNATIVE_STATUS_FINAL,True,True,8.0,,2,2.0,4,2.0,16,4.0,1,1.0,09.02.2025,5000
+test_008426,200,ALTERNATIVE_STATUS_FINAL,True,True,0.0,,2,2.0,4,3.0,8,4.0,1,1.0,09.02.2025,3702
+validation_002682,200,ALTERNATIVE_STATUS_FINAL,True,True,3.0,,2,2.0,2,1.0,8,1.0,2,0.0,09.02.2025,5063
+validation_008041,200,ALTERNATIVE_STATUS_FINAL,True,True,2.0,,4,3.0,5,4.0,6,5.0,1,0.0,09.02.2025,5113
+validation_012899,200,ALTERNATIVE_STATUS_CONTENT_FILTER,False,,,"Ошибка JSON: Expecting value, строка 1",2,,2,,15,,12,,,0
