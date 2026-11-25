@@ -8,10 +8,12 @@ services:
     environment:
       # JUPYTER_PORT in .env selects the host port only.
       JUPYTER_PORT: "8888"
+      PYTHONPATH: /home/jovyan/work
     volumes:
       - ./notebooks:/home/jovyan/work/notebooks
       - ./data:/home/jovyan/work/data
       - ./outputs:/home/jovyan/work/outputs
+      - ./legal_ner:/home/jovyan/work/legal_ner:ro
     command:
       - start-notebook.py
       - --ServerApp.root_dir=/home/jovyan/work
